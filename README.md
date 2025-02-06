@@ -1,6 +1,6 @@
 # Docker Development Environments
 
-
+A collection of repos with Docker templates.
 
 ### Execute commands inside Docker
 - Use `run` for a single one-off execution and starting a container.

@@ -1,0 +1,3 @@
+[submodule "Docker-Template-Python-Fast-API-Webservice"]
+	path = Docker-Template-Python-Fast-API-Webservice
+	url = https://github.com/aknip/Docker-Template-Python-Fast-API-Webservice

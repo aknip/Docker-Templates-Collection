@@ -20,6 +20,6 @@ RUN curl -L -o sqlite-database-integration.tar.gz "https://github.com/WordPress/
     touch "${WORDPRESS_PREPARE_DIR}/wp-content/database/.ht.sqlite" && \
     chmod 640 "${WORDPRESS_PREPARE_DIR}/wp-content/database/.ht.sqlite"
 
-#COPY ./wordpress /var/www/html
+# COPY ./wordpress /var/www/html
 
-#EXPOSE 8080
+EXPOSE 80

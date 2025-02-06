@@ -12,9 +12,17 @@ docker-compose up --build
 
 ## Docker
 docker build -t wpress .
+docker run --rm -it -p 80:80 wpress
 docker run --rm -it -p 80:80 -v ./wordpress:/var/www/html wpress
 
+## fly.io
+- Install CLI: brew install flyctl
+- Init existing app (first deploy): 
+    - fly launch --now
+- Update: 
+    - fly deploy
 
+    
 ## Source
 - https://github.com/soulteary/docker-sqlite-wordpress
 

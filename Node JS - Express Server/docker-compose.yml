@@ -1,0 +1,10 @@
+services:
+  nodejs:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: npm start
+    ports:
+      - "80:80"
+    volumes:
+      - ./app:/usr/src/app

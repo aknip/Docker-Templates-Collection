@@ -20,6 +20,7 @@ RUN curl -L -o sqlite-database-integration.tar.gz "https://github.com/WordPress/
     touch "${WORDPRESS_PREPARE_DIR}/wp-content/database/.ht.sqlite" && \
     chmod 640 "${WORDPRESS_PREPARE_DIR}/wp-content/database/.ht.sqlite"
 
+# For production: Include wordpress content in image (not via volumes)
 # COPY ./wordpress /var/www/html
 
 EXPOSE 80

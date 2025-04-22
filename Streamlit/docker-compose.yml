@@ -1,0 +1,12 @@
+
+services:
+  streamlit:
+    platform: linux/x86_64
+    build:
+      context: .
+      dockerfile: ./DockerfileStreamlit
+    command: streamlit run ./streamlit-app/streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/streamlit-app

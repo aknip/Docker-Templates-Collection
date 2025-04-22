@@ -1,0 +1,27 @@
+services:
+  #
+  # PURE n8n
+  #n8n:
+    #image: docker.n8n.io/n8nio/n8n
+  #
+  # PYTHON n8n, see https://github.com/naskio/docker-n8n-python?tab=readme-ov-file  
+  n8n-python:  
+    platform: linux/x86_64
+    #image: naskio/n8n-python:1.88.0 
+    #image: docker.n8n.io/n8nio/n8n  # pure n8n without Python
+    build:
+      context: .
+      dockerfile: ./Dockerfilen8n
+    restart: always
+    ports:
+      - "5678:5678"
+    labels:
+      - traefik.enable=false
+    environment:
+      - N8N_SECURE_COOKIE=false
+      - N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+      - N8N_RUNNERS_ENABLED=true
+      - N8N_PORT=5678
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+      - ./n8n_local-files:/data/files # by default workdir == /data

@@ -1,0 +1,7 @@
+pytest
+pytest-watch
+pymupdf==1.25.4
+python-pptx
+python-docx
+pypandoc_binary
+openpyxl

@@ -16,6 +16,7 @@ Examples => XXX is Docker container name / service name:
 ## Sources:
 1. General collections
 - Collection of awesome Docker Compose files: https://github.com/naskio/awesome-docker-compose
+- Collection of Docker Compose files for Portainer: https://github.com/jamescarppe?tab=repositories
 
 3. Collection of Docker Compose templates for Python, NodeJS, Java ...
 Instant Development for Docker-based Applications with Docker Volumes (Plug & Play Hot Reload)

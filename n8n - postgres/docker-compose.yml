@@ -37,6 +37,7 @@ services:
       - N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
       - N8N_RUNNERS_ENABLED=true
       - N8N_PORT=5678
+      - WEBHOOK_URL=https://yourdomain.com
     ports:
       - 5678:5678
     links:
